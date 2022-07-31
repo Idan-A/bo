@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<script src="https://unpkg.com/vue@3"></script>
+<div id="app">
+	<div v-for="tweet in tweets" @click="more=!more">
+		 <img :src="tweet.user_image_link"> 
+		 <span>{{tweet.user_name}}</span>
+		 <p>{{tweet.status}}</p>
+		 <div v-if="more" >
+		 	date:{{tweet.date}} likes:{{tweet.like_count}}
+		 </div>
+	</div>
+</div>
+<script src="tweeter.js"></script>

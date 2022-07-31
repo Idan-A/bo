@@ -1,0 +1,53 @@
+:root {
+        --eggshell: #f4f1deff;
+        --tumbleweed: #eab69fff;
+        --terra-cotta: #e07a5fff;
+        --rose-taupe: #8f5d5dff;
+        --independence: #3d405bff;
+        --steel-teal: #5f797bff;
+        --green-sheen: #81b29aff;
+        --sage: #babf95ff;
+        --deep-champagne: #f2cc8fff;
+}
+body{
+        background-color: var(--eggshell);
+        color: var(--independence);
+}
+.searchBar{
+        width:90%;
+        height:8%;
+        font-size: xx-large;
+        border-radius:50px;
+   }
+.crypto:hover{
+        background-color:var(--deep-champagne);
+        font-weight:bold;
+         color: var(--independence);
+        border-radius: 10px;
+
+
+}
+.element{
+        font-size:x-large;
+        /*color: black;*/
+        color: var(--independence);
+        text-decoration: none;
+}
+.exchange:hover{
+        background-color:var( --independence);
+        color:#f4f1de;
+        font-weight:bold;
+        border-radius: 10px;
+
+}
+.label{
+        font-weight:bold;
+        border-radius:10px;    
+        border-style: solid;
+        border-width: 3px;
+ }
+.button{
+        font-weight:bold;
+        border-radius:10px; 
+        font-size: x-large;
+ }
