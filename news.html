@@ -5,11 +5,11 @@
 <link rel="stylesheet" href="style.css">
 
 <div id="app">
-  	<div v-for="bo in news"  class="row">
-  	  	<img :src="bo.imgURL" class="col-2">
+  	<div v-for="bo in news"  class="row" style="border-bottom: solid var( --independence) ;">
+  	  	<img :src="bo.imgURL" style="object-fit: contain;"class="col-2">
   	  	<div class="col-10">
-  	  		<div> {{bo.title}}</div>
-  	  		<p class="col-10"> {{bo.description}}</p>
+  	  		<div style="font-size:xx-large;"> {{bo.title}}</div>
+  	  		<p class="col-10" style="font-size:large;"> {{bo.description}}</p>
   	  		<div class="row">
   	  			<span> date {{new Date(bo.feedDate)}}</span>
   	  			<a :href="bo.link"> source {{decodeURI(bo.source)}}</a>
